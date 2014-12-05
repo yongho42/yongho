@@ -1,0 +1,13 @@
+apply plugin: 'groovy'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply from: 'http://www.tellurianring.com/projects/gradle-plugins/gradle-templates/apply.groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.6'
+    providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
+}
